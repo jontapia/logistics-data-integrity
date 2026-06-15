@@ -36,10 +36,10 @@ The following five data quality issues were identified in `raw_data.csv` and sys
 ## Technical Process
 
 **Data Auditing & Duplicate Removal**
-- Used **Remove Duplicates** (Data tab) to identify and eliminate the exact duplicate record for Shipment ID SH-1004, reducing the dataset from 15 to 14 unique records
+- Used **Remove Duplicates** (Data tab) to identify and get rid of the exact duplicate record for Shipment ID SH-1004, reducing the dataset from 15 to 14 unique records
 
 **Date Standardization**
-- Applied **Power Query (Get & Transform)** to detect and normalize all three non-standard date formats into a consistent `YYYY-MM-DD` ISO 8601 format
+- Applied **Power Query (Get & Transform)** to detect and normalize all three non-standard date formats into a consistent `YYYY-MM-DD` ISO 8601 format to ensure constisency throughout the table
 - Used the **Format Cells** dialog to enforce a uniform `Date` data type across the entire Ship_Date column
 
 **Text Casing Standardization**
@@ -52,9 +52,9 @@ The following five data quality issues were identified in `raw_data.csv` and sys
 - Used **Data Validation** (Data tab → Data Validation) to apply a numeric-only rule to the Shipping_Cost column, preventing future non-numeric entries
 
 **Verification & Quality Assurance**
-- Built a **PivotTable** summarizing total shipments per carrier and average cost per destination to validate aggregate totals against source records
+- Built a **PivotTable** summarizing total shipments per carrier and average cost per destination to validate total sums against source records
 - Used `COUNTIF()` formulas to verify no remaining duplicate Shipment IDs existed in the cleaned dataset
-- Applied **Conditional Formatting** to highlight any remaining blank cells as a final visual audit check
+- Applied **Conditional Formatting** to show and highlight any remaining blank cells as a final visual audit check
 
 ---
 
