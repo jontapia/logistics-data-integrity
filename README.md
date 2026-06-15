@@ -6,8 +6,7 @@
 
 ## Objective
 
-This project automates the identification, correction, and standardization of logistics shipping data to eliminate manual errors and ensure 100% data accuracy across all records. By applying structured data validation, transformation workflows, and formatting rules within Microsoft Excel, the process reduces reliance on manual review, minimizes human error, and produces audit-ready datasets that can be directly integrated into reporting dashboards or operational systems.
-
+Practice project with leverage of LLM's. Fixes the incosistency in logistics with shipping logs, helpful for getting rid of the runt work, and putting in effort for higher priority tasks
 ---
 
 ## Project Files
