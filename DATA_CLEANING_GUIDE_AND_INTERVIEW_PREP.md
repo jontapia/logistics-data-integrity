@@ -1,9 +1,9 @@
-# Data Cleaning Guide & Interview Preparation
+# Data Cleaning Guide
 ## Logistics Data Integrity & Optimization Project
 
 ---
 
-## PART 1: Step-by-Step Excel Data Cleaning Guide
+## PART 1: Step-by-Step Excel Data Cleaning Guide ENJOYY!!
 
 The following numbered steps describe exactly how to clean `raw_data.csv` using only standard Microsoft Excel features — no coding required.
 
@@ -104,42 +104,3 @@ The following numbered steps describe exactly how to clean `raw_data.csv` using 
 5. Drag `Shipment_ID` to the **Values** area (set to **Count**).
 6. Review the totals to confirm they match expected record counts and flag any carrier with unusually high or low cost averages.
 
----
-
-## PART 2: Interview Preparation Guide
-
-The following questions simulate what an office manager or operations supervisor might ask about this project during an interview. Use these answers as a foundation and adapt them in your own voice.
-
----
-
-### Question 1:
-**"Can you walk me through a time you identified and corrected errors in a data set? What was your process?"**
-
-**Pro-Level Answer:**
-> "In this shipping log project, I developed a systematic audit process — starting with duplicate detection, then moving through format standardization, missing value resolution, and invalid entry correction — to ensure every record met a defined quality standard before the data was used in reporting. By documenting each step and applying Data Validation rules in Excel, I also built in safeguards so those same errors couldn't re-enter the dataset in the future, which is just as important as fixing the original problem."
-
-**Why this works:** It demonstrates a methodical, preventative mindset — not just reactive fixing — which is what office managers want in someone handling critical data.
-
----
-
-### Question 2:
-**"How do you ensure data accuracy when working with large volumes of information?"**
-
-**Pro-Level Answer:**
-> "I rely on a combination of automated validation rules and formula-based auditing rather than manual eyeballing, because human review alone doesn't scale reliably — I used Excel's Data Validation to enforce numeric-only inputs on the cost column and COUNTIF formulas to flag any duplicate IDs, which meant the system caught errors automatically rather than depending on me to spot them each time. Pairing that with a final Conditional Formatting audit sweep meant I could confirm data integrity across all 14 records in under two minutes."
-
-**Why this works:** It signals efficiency, scalability thinking, and familiarity with Excel tools beyond basic data entry.
-
----
-
-### Question 3:
-**"What steps would you take if you received a report that looked 'off' but you weren't sure where the error was?"**
-
-**Pro-Level Answer:**
-> "My first step would be to trace the data back to its source — I'd open the raw input file, run a quick duplicate check, and scan for data type inconsistencies like text values in numeric fields or mixed date formats, since those are the most common culprits for downstream reporting errors. From there I'd compare a PivotTable summary of the raw data against the report output to isolate exactly which records or aggregations were causing the discrepancy, so I could fix the root cause rather than just patch the symptom."
-
-**Why this works:** It shows structured problem-solving and the ability to independently diagnose issues — a key trait for any office or data role.
-
----
-
-*Prepared as part of a technical portfolio project for an Office Assistant / Data Entry role.*
