@@ -1,0 +1,16 @@
+Shipment_ID,Ship_Date,Carrier,Destination,Weight_lbs,Shipping_Cost,Status
+SH-1001,2024-01-15,FedEx,New York,12.5,34.50,Delivered
+SH-1002,01/16/2024,UPS,Chicago,8.3,22.75,Delivered
+SH-1003,2024-01-17,fedex,Los Angeles,15.0,N/A,In Transit
+SH-1004,2024-01-18,DHL,Houston,6.8,18.20,Delivered
+SH-1005,Jan 19 2024,,Miami,10.2,27.60,Delivered
+SH-1006,2024-01-20,UPS,Seattle,9.5,25.40,Pending
+SH-1007,2024-01-21,FEDEX,Boston,14.1,38.90,Delivered
+SH-1008,2024-01-22,DHL,Phoenix,7.7,19.85,Delivered
+SH-1009,2024-01-23,ups,Dallas,11.3,30.10,In Transit
+SH-1010,01-24-2024,FedEx,Denver,13.8,36.70,Delivered
+SH-1004,2024-01-18,DHL,Houston,6.8,18.20,Delivered
+SH-1011,2024-01-25,UPS,Atlanta,8.9,N/A,Pending
+SH-1012,2024-01-26,FedEx,Portland,10.7,28.95,Delivered
+SH-1013,2024-01-27,DHL,Minneapolis,12.0,32.40,In Transit
+SH-1014,2024-01-28,UPS,San Diego,9.1,24.60,Delivered
