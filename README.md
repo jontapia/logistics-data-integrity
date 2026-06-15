@@ -6,7 +6,7 @@
 
 ## Objective
 
-Practice project with leverage of LLM's. Fixes the incosistency in logistics with shipping logs, helpful for getting rid of the runt work, and putting in effort for higher priority tasks
+Practice project with leverage of LLM's. Fixes the incosistency in logistics with shipping logs, helpful for getting rid of the runt work, and putting in effort for higher priority tasks Furthermore, used AI to help brainstorm the logic for these formulas provided, personally checked the output to ensure the data was 100% accurate
 ---
 
 ## Project Files
