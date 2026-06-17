@@ -35,27 +35,22 @@ The following five data quality issues were identified in `raw_data.csv` and sys
 
 ## Technical Process
 
-**Data Auditing & Duplicate Removal**
-- Used **Remove Duplicates** (Data tab) to identify and get rid of the exact duplicate record for Shipment ID SH-1004, reducing the dataset from 15 to 14 unique records
+How I Fixed It
+Duplicates
 
-**Date Standardization**
-- Applied **Power Query (Get & Transform)** to detect and normalize all three non-standard date formats into a consistent `YYYY-MM-DD` ISO 8601 format to ensure constisency throughout the table
-- Used the **Format Cells** dialog to enforce a uniform `Date` data type across the entire Ship_Date column
+Used Excel's Remove Duplicates tool to catch and remove the duplicate SH-1004 record, bringing the dataset down from 15 to 14 unique entries.
+Date Standardization
 
-**Text Casing Standardization**
-- Used **Find & Replace** (Ctrl+H) to correct all-caps and lowercase carrier entries (`FEDEX` → `FedEx`, `fedex` → `FedEx`, `ups` → `UPS`)
-- Applied the `PROPER()` formula as a secondary validation check on the Carrier column
+Ran Power Query to detect and normalize all three non-standard date formats into a consistent YYYY-MM-DD (ISO 8601) format, then enforced a uniform Date type across the entire Ship_Date column.
+Text Casing
 
-**Handling Missing & Invalid Values**
-- Used **Go To Special → Blanks** to locate the empty Carrier cell; flagged the record with `Unknown` per data governance protocol
-- Applied **Find & Replace** to locate all `N/A` string values in the Shipping_Cost column and replaced them with `0.00` to maintain numeric data integrity
-- Used **Data Validation** (Data tab → Data Validation) to apply a numeric-only rule to the Shipping_Cost column, preventing future non-numeric entries
+Used Find & Replace to correct carrier names entered in all-caps or lowercase, then ran PROPER() as a secondary check to catch anything that slipped through.
+Missing & Invalid Values
 
-**Verification & Quality Assurance**
-- Built a **PivotTable** summarizing total shipments per carrier and average cost per destination to validate total sums against source records
-- Used `COUNTIF()` formulas to verify no remaining duplicate Shipment IDs existed in the cleaned dataset
-- Applied **Conditional Formatting** to show and highlight any remaining blank cells as a final visual audit check
+Used Go To Special → Blanks to find the empty Carrier cell and flagged it as Unknown following data governance protocol. Replaced all N/A strings in Shipping_Cost with 0.00 to keep the column numeric, then applied Data Validation to prevent the same issue from coming back.
+Verification
 
+Built a PivotTable to summarize shipments per carrier and average cost per destination, then used COUNTIF() to confirm no duplicate Shipment IDs remained. Applied Conditional Formatting as a final visual sweep for any leftover blanks.
 ---
 
 ## Results
